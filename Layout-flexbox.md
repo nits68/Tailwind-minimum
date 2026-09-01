@@ -67,8 +67,8 @@ A kereszttengely a főtengelyre merőleges (sor esetén a függőleges (Y) tenge
 * `flex-1`: Az elem kitölti a rendelkezésre álló maradék helyet. Ha több elem is `flex-1`, akkor egyenlően osztoznak.
 * `flex-wrap`: Ha az elemek nem férnek ki egy sorba, a `flex-wrap` engedi őket a következő sorba törni (alapértelmezésben a flexbox megpróbál mindent egy sorba zsúfolni).
 * `flex-none`: Az elem pontosan akkora marad, amekkora a tartalma (vagy a megadott width/height). Nem fog megnőni a maradék helyre, és nem is megy össze, ha szűkös a hely.
-* `flex-initial`: Alapértelezés. Az elem nem nő meg, hogy kitöltse a maradék helyet, de össze tud zsugorodni, ha nincs elég hely a képernyőn.
-* ``flex-auto`: Figyelembe veszi az elem eredeti méretét, de utána szabadon megnőhet vagy összezsugorodhat a maradék hely függvényében.
+* `flex-initial`: Alapértelmezés. Az elem nem nő meg, hogy kitöltse a maradék helyet, de össze tud zsugorodni, ha nincs elég hely a képernyőn.
+* `flex-auto`: Figyelembe veszi az elem eredeti méretét, de utána szabadon megnőhet vagy összezsugorodhat a maradék hely függvényében.
 
 **Példa (Input mező és gomb, ahol az input kitölti a maradék helyet):**
 

@@ -1,4 +1,3 @@
-
 # Transzformációk (Transforms)
 
 A Tailwind transzformációs osztályaival anélkül méretezhetsz, forgathatsz, tolhatsz el vagy dönthetsz meg elemeket, hogy a dokumentum normál folyását (tehát a többi elem elhelyezkedését) megzavarnád.
@@ -7,16 +6,16 @@ A Tailwind transzformációs osztályaival anélkül méretezhetsz, forgathatsz,
 
 A `scale-*` osztályokkal az elemeket az eredeti méretük százalékában tudod nagyítani vagy kicsinyíteni. A `scale-100` az eredeti (100%-os) méret.
 
-* **`scale-50`, `scale-75`, `scale-90`, `scale-95**`: Kicsinyítés (pl. 50%, 75%).
-* **`scale-105`, `scale-110`, `scale-125`, `scale-150**`: Nagyítás.
+* **`scale-50`, `scale-75`, `scale-90`, `scale-95`**: Kicsinyítés (pl. 50%, 75%).
+* **`scale-105`, `scale-110`, `scale-125`, `scale-150`**: Nagyítás.
 * **Tengelyenkénti méretezés**: Ha csak széltében vagy hosszában nyújtanál valamit, használd a `scale-x-*` (vízszintes) vagy `scale-y-*` (függőleges) osztályokat.
 
 ## Forgatás (Rotate)
 
 A `rotate-*` osztályok fokban (degree) forgatják el az elemet.
 
-* **`rotate-45`, `rotate-90`, `rotate-180**`: Az óramutató járásával megegyező forgatás (pl. 45 fok).
-* **`-rotate-45`, `-rotate-90**`: Az óramutató járásával ellentétes (negatív) forgatás. *(Tipp: a mínusz jelet egyszerűen az osztály elé kell tenni!)*
+* **`rotate-45`, `rotate-90`, `rotate-180`**: Az óramutató járásával megegyező forgatás (pl. 45 fok).
+* **`-rotate-45`, `-rotate-90`**: Az óramutató járásával ellentétes (negatív) forgatás. *(Tipp: a mínusz jelet egyszerűen az osztály elé kell tenni!)*
 
 **Példa (Lenyíló menü nyíl animációja):**
 Gyakori trükk, hogy egy gomb melletti kis nyíl lefelé néz, de ha a menü aktív (vagy a gomb fölé viszed az egeret), felfelé fordul.
@@ -36,7 +35,7 @@ A `translate-*` osztályokkal az elemet a saját pozíciójához képest mozgath
 
 * **`translate-x-4`**: Jobbra tolja az elemet (kb. 16px).
 * **`-translate-y-2`**: Felfelé tolja az elemet (negatív érték).
-* **`translate-x-1/2` vagy `translate-x-full**`: Az elem a *saját szélességének* felével (50%), vagy a teljes szélességével (100%) tolódik el. Ez hihetetlenül hasznos középre igazításnál vagy képernyőről kicsúszó paneleknél!
+* **`translate-x-1/2` vagy `translate-x-full`**: Az elem a *saját szélességének* felével (50%), vagy a teljes szélességével (100%) tolódik el. Ez hihetetlenül hasznos középre igazításnál vagy képernyőről kicsúszó paneleknél!
 
 ## Döntés (Skew)
 

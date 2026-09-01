@@ -56,7 +56,23 @@ Meghatározza, hogyan keveredjen egy elem tartalma az alatta lévő háttérrel 
 
 ```
 
-## 4. Maszkok (Masks) - Gradiens átmenettel
+## 4. Szűrők (Filters)
+
+A `blur-*`-hoz hasonló szűrők közvetlenül az elemre (és a tartalmára) hatnak, nem csak a mögötte lévő háttérre (azzal ellentétben, amit a `backdrop-*` osztályoknál láttunk a Hátterek fejezetben).
+
+* `blur-sm`, `blur`, `blur-md`, `blur-lg`, `blur-xl`: Elmosja az elemet. Gyakori pl. betöltés alatt lévő képeknél (placeholder), vagy háttérbe helyezett díszítőelemeknél.
+* `grayscale`: Fekete-fehérré alakítja a képet (pl. hover előtt színes, hover után fekete-fehér termékkép esetén fordítva is használható: `grayscale hover:grayscale-0`).
+* `brightness-{érték}`: Fényerő állítása (pl. `brightness-50` sötétebb, `brightness-125` világosabb).
+* `contrast-{érték}`: Kontraszt állítása.
+* `saturate-{érték}`: Szín telítettségének állítása (pl. `saturate-0` ugyanaz, mint a `grayscale`).
+
+**Példa (Fekete-fehér termékkép, ami hoverre kiszínesedik):**
+```html
+<img src="termek.jpg" alt="Termék" class="grayscale hover:grayscale-0 transition duration-300">
+
+```
+
+## 5. Maszkok (Masks) - Gradiens átmenettel
 
 Bár a teljes CSS maszkolás bonyolult, Tailwindben a legegyszerűbb maszkolást (egy elem széleinek elhalványítását) egy "menekülőutas" technikával, szögletes zárójelekkel (arbitrary values) érhetjük el legkönnyebben.
 

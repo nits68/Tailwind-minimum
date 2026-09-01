@@ -10,7 +10,7 @@ A `justify-*` osztályokkal szabályozhatod, hogyan helyezkedjenek el az elemek 
 * **`justify-center`**: Elemek pontosan középre igazítása.
 * **`justify-end`**: Elemek a tartály végére (jobb szélére) tolva.
 * **`justify-between`**: Egyenletes eloszlás: az első elem a kezdőponton, az utolsó a végponton tapad, a többi között egyenlő a hely.
-* **`justify-around` / `justify-evenly**`: Egyenletes térközök az elemek körül (a széleken is marad hely).
+* **`justify-around` / `justify-evenly`**: Egyenletes térközök az elemek körül (a széleken is marad hely).
 
 ## Igazítás a Kereszttengelyen (Align Items)
 
@@ -38,7 +38,7 @@ Az `items-*` osztályok a kereszttengely mentén (soroknál ez a függőleges te
 Ha csak egyetlen elemet szeretnél máshogy igazítani, mint a konténer többi elemét (felülbírálva a szülő `items-*` beállítását), a `self-*` osztályokat használd közvetlenül a gyermek elemen.
 
 * **`self-auto`**: Követi a szülő beállítását.
-* **`self-start`, `self-center`, `self-end`, `self-stretch**`: Ugyanúgy működnek, mint az `items-*`, de csak a kiválasztott gyermek elemre hatnak.
+* **`self-start`, `self-center`, `self-end`, `self-stretch`**: Ugyanúgy működnek, mint az `items-*`, de csak a kiválasztott gyermek elemre hatnak.
 
 **Példa (Egyedi igazítás a sorban):**
 Ebben a példában a szülő konténer alapból a tetejére (`items-start`) igazítja az elemeket, de a második elem középre, a harmadik pedig az aljára kényszeríti magát.
@@ -57,7 +57,7 @@ Ha az elemeid több sorba törnek (például a `flex-wrap` használata miatt), a
 
 * **`content-start`**: Minden sor a tartály tetejére gyűlik.
 * **`content-center`**: A sorok egy tömbben, középen helyezkednek el.
-* **`content-between`, `content-around`, `content-evenly**`: A sorok egyenletesen eloszlanak a rendelkezésre álló függőleges térben.
+* **`content-between`, `content-around`, `content-evenly`**: A sorok egyenletesen eloszlanak a rendelkezésre álló függőleges térben.
 
 **Példa (Sorok elosztása egy magas dobozban):**
 Itt a doboz direkt magasabb (`h-48`, azaz 192px), az elemek pedig több sorba törnek (`flex-wrap`). A `content-between` gondoskodik róla, hogy az első sor a doboz tetejére, az alsó pedig az aljára tapadjon.
@@ -76,4 +76,5 @@ Itt a doboz direkt magasabb (`h-48`, azaz 192px), az elemek pedig több sorba t�
 
 * Ha egy elemet tökéletesen a képernyő (vagy egy doboz) közepére szeretnél igazítani vízszintesen és függőlegesen is, a klasszikus "varázsige": `class="flex items-center justify-center min-h-screen"`.
 * Ne feledkezz meg a **`gap-{méret}`** (pl. `gap-4`) osztályról! Ez a legtisztább és legmodernebb módja annak, hogy egyenletes távolságot tarts az elemek között anélkül, hogy marginokkal (margókkal) kellene trükköznöd az egyes elemeken.
+* Grid elrendezésnél létezik egy még rövidebb írásmód is: a **`place-items-*`** egyszerre állítja be a `justify-items-*` (vízszintes) és `items-*` (függőleges) értékeket. A leggyakoribb: `place-items-center` egyetlen osztállyal középre igazítja a grid celláinak tartalmát mindkét tengelyen.
 

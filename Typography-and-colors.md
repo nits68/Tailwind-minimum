@@ -51,6 +51,29 @@ A Tailwind a betűméretek (`font-size`) beállításakor a sorközt (`line-heig
 
 * `text-left`, `text-center`, `text-right`, `text-justify`.
 
+### Szövegdíszítés és Átalakítás (Decoration & Transform)
+
+* **Díszítés:** `italic` (dőlt), `underline` (aláhúzott), `line-through` (áthúzott), `no-underline` (díszítés eltávolítása, pl. linkeknél).
+* **Nagybetűsítés:** `uppercase` (CSUPA NAGYBETŰ), `lowercase` (csupa kisbetű), `capitalize` (Minden Szó Nagybetűvel), `normal-case` (visszaállítja az eredeti írásmódot).
+
+**Példa (Link, ami alapból nincs aláhúzva, csak hoverre):**
+```html
+<a href="#" class="text-blue-600 no-underline hover:underline">Tudj meg többet</a>
+
+```
+
+### Sormagasság és Betűköz (Leading & Tracking)
+
+* `leading-{méret}`: A sorok közötti magasság (line-height). Pl. `leading-tight` (szűkebb, jó címsoroknak), `leading-normal` (alapértelmezett), `leading-loose` (levegősebb, jó hosszabb bekezdéseknek).
+* `tracking-{méret}`: A betűk közötti térköz (letter-spacing). Pl. `tracking-tight` (összébb húzott), `tracking-wide` (szétebb húzott, gyakori pl. csupa nagybetűs feliratoknál, hogy jobban olvasható legyen).
+
+**Példa (Levegős, olvasható bekezdés és egy feliratszerű, ritkított címke):**
+```html
+<p class="leading-loose">Ez egy hosszabb bekezdés, ahol a nagyobb sormagasság segít a szem követésének.</p>
+<span class="uppercase tracking-wide text-xs text-gray-500">Új termék</span>
+
+```
+
 ## Szóközök és Sortörések (Whitespace)
 
 Amikor dinamikus adatokat (pl. adatbázisból jövő szöveget vagy kód részleteket) jelenítesz meg, fontos lehet, hogyan kezeli a böngésző a szóközöket és entereket.
